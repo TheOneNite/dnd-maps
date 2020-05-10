@@ -1,4 +1,4 @@
-export const proxy = "http://localhost:4000";
+export const proxy = "http://165.227.32.224:4144";
 //export const proxy = "http://70.52.81.229:4000";
 
 export const generateId = (length) => {
