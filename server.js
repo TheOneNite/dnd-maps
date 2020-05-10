@@ -8,7 +8,7 @@ const cors = require("cors");
 app.use(cookieParser());
 app.use(cors({ origin: true, credentials: true }));
 
-const listenPort = 4000;
+const listenPort = 4144;
 
 const globalUsers = {};
 const globalPositions = {};
