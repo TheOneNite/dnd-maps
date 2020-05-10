@@ -3,7 +3,10 @@ const app = express();
 
 const listenPort = 3133;
 
-app.get("/*", (req, res) => {
+app.use("/", express.static("build")); // Needed for the HTML and JS files
+app.use("/", express.static("public")); // Needed for local assets
+
+app.all("/*", (req, res) => {
   res.sendFile(__dirname + "/build/index.html");
 });
 
